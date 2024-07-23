@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">Registro de Personas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./perfiles.html">Perfiles Famosos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            
+            <div class="ml-auto">
+                <button id="increase-font-size" class="btn btn-secondary">Accesibilidad</button>
+            </div>
+        </ul>
+            
+        </div>
+      </nav>
+    </header>
+
+    <h2>Formulario de Contacto</h2>
+    <form id="formulario_contacto " action="" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+        
+        <input id="btnEnviar" type="submit" value="Enviar">
+    </form>
+
+    <footer class="footer">
+        <p>&copy; Esta página fue desarrollada por 
+          <a id="linkGeronimo" href="https://www.linkedin.com/">Geronimo A. Franco</a>-
+          <a id="linkVanina" href="https://www.linkedin.com/">Vanina Coria</a>. Para
+          <a id="linkCilsa" href="https://www.cilsa.org/">CILSA-ONG</a></p>
+      </footer>    
+</body>
+</html>
