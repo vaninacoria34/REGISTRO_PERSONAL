@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="../index.html">Registro de Personas</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Registro de Personas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,41 +26,53 @@
             <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            
             <div class="ml-auto">
-                <button id="increase-font-size" class="btn btn-secondary">Accesibilidad</button>
+                <button id="toggleContrast" class="btn btn-secondary">Cambiar Contraste</button>
             </div>
-        </ul>
-            
+          </ul>
         </div>
       </nav>
-    </header>
+</header>
 
-    <h2>Formulario de Contacto</h2>
-    <form id="formulario_contacto " action="" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
-
-        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+<div class="container mt-5">
+    <h2 class="text-center">Formulario de Contacto</h2>
+    <form id="formulario_contacto" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+            <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" name="apellido" required>
+            <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
+        </div>
         
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-        
-        <input id="btnEnviar" type="submit" value="Enviar">
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">Por favor, ingrese un email válido.</div>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            <div class="invalid-feedback">Por favor, ingrese su mensaje.</div>
+        </div>
+        <button id="btnEnviar" type="submit" class="btn btn-primary btn-block">Enviar</button>
     </form>
+</div>
 
-    <footer class="footer">
-        <p>&copy; Esta página fue desarrollada por 
-          <a id="linkGeronimo" href="https://www.linkedin.com/">Geronimo A. Franco</a>-
-          <a id="linkVanina" href="https://www.linkedin.com/">Vanina Coria</a>. Para
-          <a id="linkCilsa" href="https://www.cilsa.org/">CILSA-ONG</a></p>
-      </footer>    
+<footer class="footer mt-5 text-center">
+    <p>&copy; Esta página fue desarrollada por 
+      <a id="linkGeronimo" href="https://www.linkedin.com/">Geronimo A. Franco</a>-
+      <a id="linkVanina" href="https://www.linkedin.com/">Vanina Coria</a>. Para
+      <a id="linkCilsa" href="https://www.cilsa.org/">CILSA-ONG</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../javascript/contraste.js"></script>
+<script src="../javascript/validation.js"></script>
 </body>
 </html>

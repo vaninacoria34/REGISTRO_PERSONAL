@@ -1,0 +1,54 @@
+/* Estilos para el modo de alto contraste */
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast .form-control {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.high-contrast .btn {
+    background-color: #050505;
+    color: #ece8e8;
+}
+
+body.high-contrast label {
+    color: #000000;
+}
+
+/* Estilos generales */
+.container {
+    max-width: 600px;
+}
+
+h2.text-center {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #000;  /* Asegura que el texto de los labels sea visible en el modo normal */
+}
+
+#formulario_contacto {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+}
+
+#btnEnviar {
+    margin-top: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #cfcfcf;
+}
+
+footer a {
+    color: #007bff;
+}
