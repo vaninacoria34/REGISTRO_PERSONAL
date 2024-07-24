@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Completa</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <img id="full-image" src="" alt="Imagen Completa" class="img-fluid">
+    </div>
+
+    <script>
+        // Obtiene la URL de la imagen desde los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageUrl = urlParams.get('image');
+        document.getElementById('full-image').src = imageUrl;
+    </script>
+</body>
+</html>

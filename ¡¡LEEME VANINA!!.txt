@@ -1,0 +1,11 @@
+Hola Vanina, te dejo por aca ese mensaje.
+
+esta practimente todo hecho, hay un problema nomas con el javascript del formulario pero no le encuentro la vuelta jaja.
+
+el index.html estaria bien creo, y esta todo linkeado.
+
+en perfiles famosos hay seis tarjetas las ultimas dos tienen nuestros nombres pero no imagenes.
+
+en la carpta img deje una foto con mi nombre si vos decidis agrega una foto tuya si no te acordas como se hace escribime y te explico.
+
+no se si viste el tutorial de modal en el campus si podes fijate de implementarle a las de la seccion perfiles famosos. SINO VEMOS.
