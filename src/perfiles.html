@@ -7,6 +7,26 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
         <script src="../javascript/script.js"></script>
+      <style>
+       .high-contrast .navbar, .high-contrast .card {
+            background-color: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+        .high-contrast .btn {
+            background-color: #fff;
+            color: #000;
+        }
+        footer {
+    padding: 1rem;
+    background-color:#000;
+}
+
+footer a {
+    color: #000;
+}
+
+        </style>
     </head>
 <body>
     <header>
@@ -28,7 +48,9 @@
             </li>
             
             <div class="ml-auto">
-                <button id="increase-font-size" class="btn btn-secondary">Accesibilidad</button>
+            
+                <button id="toggle-contrast" class="btn btn-secondary ml-2">Cambiar Contraste</button>
+            
             </div>
         </ul>
             
@@ -111,7 +133,7 @@
             <!-- Tarjeta 6 -->
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="#" alt="Isaac Newton" width="275" height="183">
+                    <img class="card-img-top" src="C:\Users\vanin\Desktop\REGISTRO-PERSONAL\REGISTRO_PERSONAL\img\geronimo.jpg" alt="Isaac Newton" width="275" height="183">
                     <div class="card-body">
                         <h5 class="card-title">Geronimo A. Franco</h5>
                         <p class="card-text">Geronimo A. Franco, programador y desarrollador de este sitio web.</p>
@@ -129,6 +151,10 @@
           <a id="linkVanina" href="https://www.linkedin.com/">Vanina Coria</a>. Para
           <a id="linkCilsa" href="https://www.cilsa.org/">CILSA-ONG</a></p>
       </footer>
-
+      <script>
+        document.getElementById('toggle-contrast').addEventListener('click', function() {
+       document.body.classList.toggle('high-contrast');
+   });
+ </script>
 </body>
 </html>
